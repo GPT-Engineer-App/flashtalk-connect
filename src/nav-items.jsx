@@ -1,6 +1,6 @@
-import { Home, Phone, UserCircle, Settings, Bell } from "lucide-react";
+import { Home, UserCircle, Settings, Bell, Users } from "lucide-react";
 import Index from "./pages/Index.jsx";
-import VideoCall from "./pages/VideoCall.jsx";
+import FamilyTree from "./pages/FamilyTree.jsx";
 import Profile from "./pages/Profile.jsx";
 import SettingsPage from "./pages/Settings.jsx";
 import Notifications from "./pages/Notifications.jsx";
@@ -16,10 +16,10 @@ export const navItems = [
     page: <Index />,
   },
   {
-    title: "Video Call",
-    to: "/video-call",
-    icon: <Phone className="h-4 w-4" />,
-    page: <VideoCall />,
+    title: "Family Tree",
+    to: "/family-tree",
+    icon: <Users className="h-4 w-4" />,
+    page: <FamilyTree />,
   },
   {
     title: "Profile",

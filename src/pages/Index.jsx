@@ -15,25 +15,12 @@ const Index = () => {
     e.preventDefault();
     try {
       // Here you would implement the actual login logic
-      // For example:
-      // const response = await fetch('https://a-kcmnisi00-gmail-com-api.appasapgateway.app/api/auth/login', {
-      //   method: 'POST',
-      //   headers: { 'Content-Type': 'application/json' },
-      //   body: JSON.stringify({ email, password }),
-      // });
-      // if (response.ok) {
-      //   const data = await response.json();
-      //   // Store the token, redirect, etc.
-      // } else {
-      //   throw new Error('Login failed');
-      // }
-      
       console.log('Logging in with', email, password);
       toast({
         title: "Login Successful",
-        description: "Welcome back!",
+        description: "Welcome to your family tree!",
       });
-      navigate('/video-call');
+      navigate('/family-tree');
     } catch (error) {
       toast({
         title: "Login Failed",
@@ -46,7 +33,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
-        <h1 className="text-2xl font-bold mb-6 text-center">Welcome to VideoCall App</h1>
+        <h1 className="text-2xl font-bold mb-6 text-center">Welcome to Family Tree App</h1>
         <form onSubmit={handleLogin} className="space-y-4">
           <div>
             <Label htmlFor="email">Email</Label>
